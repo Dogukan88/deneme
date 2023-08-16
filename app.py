@@ -6,7 +6,7 @@ import os
 
 
 path = os.path.dirname(__file__)
-my_file = path+'/USA_cars_datasets.csv'
+data = path+'/USA_cars_datasets.csv'
 
 
 hist_1 = px.histogram(data,x="price")
