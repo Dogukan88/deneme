@@ -7,7 +7,7 @@ import os
 
 path = os.path.dirname(__file__)
 data = path+'/USA_cars_datasets.csv'
-df = pd.DataFrame(list(data))
+data = pd.DataFrame()
 
 hist_1 = px.histogram(data,x="price")
 st.plotly_chart(hist_1, use_container_width=True)
