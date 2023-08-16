@@ -5,10 +5,8 @@ import os
 
 
 
-
-pwd = os.getcwd()
-data = pd.read_csv(pwd + ("/notebooks/USA_cars_datasets.csv"))
-print(data)
+path = os.path.dirname(__file__)
+my_file = path+'/USA_cars_datasets.csv'
 
 
 hist_1 = px.histogram(data,x="price")
