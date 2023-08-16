@@ -7,6 +7,7 @@ import os
 
 path = os.path.dirname(__file__)
 data = path+'/USA_cars_datasets.csv'
+data = pd.DataFrame()
 data2 = []
 data2 = data.copy()
 data2 = pd.DataFrame()
