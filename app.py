@@ -4,21 +4,10 @@ import plotly.express as px
 import os
 
 
-try:
-    st.write('Trying with back slashes')
-    st.dataframe(pd.read_csv(r'.\\files\\test.csv'))
-except:
-    st.write('It didn\'t work with back slashes.')
 
-
-try:
-    st.write('Trying with forward slashes')
-    st.dataframe(pd.read_csv(r'files/test.csv'))
-except:
-    st.write('It didn\'t work with forward slashes.')
 
 pwd = os.getcwd()
-data = pd.read_csv(pwd + ("\\notebooks\\USA_cars_datasets.csv"))
+data = pd.read_csv(pwd + ("/notebooks/USA_cars_datasets.csv"))
 print(data)
 
 
